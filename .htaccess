@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^([^/]*?).pdf$ http://clients.ddhive.com/secure/login.php
+
+RedirectMatch 301 (.*)\.html$ http://localhost:8888/index.php
